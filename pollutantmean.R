@@ -5,5 +5,5 @@ pollutantmean <- function(directory, pollutant, id=1:322){
     dat <- rbind(dat, read.csv(files_list[i]))
     print(head(files_list[i]))
   }
-  median(dat[,pollutant], na.rm=TRUE)
+  mean(dat[,pollutant], na.rm=TRUE)
 }
