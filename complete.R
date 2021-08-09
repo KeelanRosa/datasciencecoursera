@@ -1,4 +1,4 @@
-complete <- function(directory, id=1:322){
+complete <- function(directory, id=1:332){
   # set up dataframe
   data <- data.frame()
   # add rows
@@ -8,5 +8,5 @@ complete <- function(directory, id=1:322){
   }
   # format
   colnames(data) <- c("id", "nobs")
-  print(data)
+  data
 }
